@@ -31,8 +31,8 @@ const Home = () => {
       <div>
         <Card>
           <CardHeader>
-            <div className="flex w-full flex-col items-center">
-              <Tabs aria-label="Options">
+            <div className="flex w-full flex-col">
+              <Tabs aria-label="Options" className="justify-content-center">
                 {listTiposBancos.map(({ id, nombre }) => (
                   <Tab key={id} title={nombre}>
                     <Card>
