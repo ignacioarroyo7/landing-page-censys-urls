@@ -1,3 +1,4 @@
+import { Card } from '@nextui-org/react'
 import './App.css'
 import Header from './components/Header'
 import Home from './pages/home/Home'
@@ -6,12 +7,13 @@ import Home from './pages/home/Home'
 function App() {
 
   return (
-    <>
     <div>
-<Header/>
-      <Home className='my-10'/>
+      {/* <Card> */}
+      <Header/>
+      <Home/>
+      {/* </Card> */}
     </div>
-    </>
+
   )
 }
 
