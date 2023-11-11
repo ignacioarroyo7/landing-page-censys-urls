@@ -7,7 +7,7 @@ const UrlSection = () => {
   const listTiposBancos = [
     {
       id: 1,
-      nombre: "Banca Individuo",
+      nombre: "BancaIndividuo",
     },
     {
       id: 2,
@@ -24,8 +24,8 @@ const UrlSection = () => {
   ];
   return (
 
-            <div className="flex w-full flex-col items-center">
-              <Tabs aria-label="Dynamic tabs" className="justify-center mt-2">
+    <div className="flex w-full flex-col items-center">
+              <Tabs aria-label="Dynamic tabs" fullWidth={true} className="justify-center mt-2">
                 {listTiposBancos.map(({ id, nombre }) => (
                   <Tab key={id} title={nombre}>
                     <Card fullWidth={true}>
@@ -54,7 +54,7 @@ const UrlSection = () => {
                   </Tab>
                 ))}
               </Tabs>
-            </div>
+    </div>
   );
 };
 
