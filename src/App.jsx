@@ -8,9 +8,11 @@ function App() {
 
   return (
     <>
+    <div className='body-font font-poppins'>
       <Header/>
       <Home/>
       <Footer/>
+    </div>
     </>
   )
 }

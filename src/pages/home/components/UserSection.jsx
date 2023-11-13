@@ -4,6 +4,12 @@ import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@
 const UserSection = () => {
     return (
         <>
+        <div
+        
+        className="flex items-center justify-center py-10"
+      >
+        <h1 className="text-4xl font-bold">Usuarios</h1>
+      </div>
         <div className='p-5' id='seccion-usuarios'>
         <Table isStriped aria-label="Example static collection table">
       <TableHeader>

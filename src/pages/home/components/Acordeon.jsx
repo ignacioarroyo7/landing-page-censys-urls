@@ -2,9 +2,9 @@ import { useRef } from 'react';
 import {Accordion, AccordionItem, Avatar,Link,Snippet} from "@nextui-org/react";
 import { UrlsBanks } from './UrlBanks';
 
-const Acordeon = ( ) => {
+const Acordeon = () => {
     const linkRef = useRef(null);
-    const listBank = UrlsBanks
+    // const listBank = urls
 
     const copyToClipboard = (url) => {
         // Obtén el contenido del enlace
@@ -23,7 +23,7 @@ const Acordeon = ( ) => {
       };
     return (
         <Accordion isCompact selectionMode="multiple">
-{listBank.map(({id,nombre,url,image,entorno})=>(
+{UrlsBanks.map(({id,nombre,url,image,entorno})=>(
       <AccordionItem
         key={id}
         aria-label={nombre}

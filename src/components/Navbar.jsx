@@ -20,7 +20,7 @@ const NavbarHeader = () => {
         />
         <NavbarBrand>
         <CensysLogo/>
-      <p className="font-bold text-inherit">Censys S.A.</p>
+      <p className="font-bold text-lg text-inherit ps-2">I + D</p>
         </NavbarBrand>
       </NavbarContent>
 
