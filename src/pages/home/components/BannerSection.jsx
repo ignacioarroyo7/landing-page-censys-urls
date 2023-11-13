@@ -1,24 +1,61 @@
-import React from 'react';
-import { Button, Image,Card,CardHeader,CardFooter,CardBody } from '@nextui-org/react';
-import BackgroundBanner from './BackgroundBanner';
+import { Button,Modal,ModalFooter,ModalContent,ModalHeader,ModalBody,useDisclosure } from '@nextui-org/react';
+
 
 const BannerSection = () => {
+  const {isOpen, onOpen, onClose} = useDisclosure();
+  const handleOpen = () => {
+    onOpen();
+  }
     return (
-        <div className="max-w-[900px]  gap-2 grid grid-cols-12 grid-rows-2 px-8">
-    <Card radius='none' className="col-span-12 sm:col-span-4">
-      <CardBody className="absolute z-10 top-1 flex-col text-center flex !items-center">
-      <h3 className="text-white/60 font-medium text-xl">I+D</h3>
-        <h4 className="text-white/60 font-medium text-large">Accesos WEB, Servicios, Pruebas, Helpers, Usuarios</h4>
-      </CardBody>
-      <Image
-        radius='none'
-        removeWrapper
-        alt="Card background"
-        className="z-0 w-full h-full object-cover"
+      <>
+        <div id='seccion-inicio'>
+           <div className="relative">
+      {/* Imagen de fondo */}
+      <img
         src="../../../../public/resources/images/background.jpg"
+        alt="Descripción de la imagen"
+        className="w-full h-auto"
       />
-    </Card>
-  </div>
+
+      {/* Texto superpuesto */}
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+      <h3 className="text-white/60 text-4xl font-bold my-5">I+D</h3>
+        <h4 className="text-white/60 font-medium text-large">Accesos WEB, Servicios, Pruebas, Helpers, Usuarios</h4>
+        <div className='mt-10'>
+        <Button  
+            size="lg"
+            color="primary" variant="shadow"
+            onPress={() => handleOpen()}
+          >
+           Iniciar Sesión
+          </Button>
+        </div>
+      </div>
+    </div>
+        </div>
+        <Modal placement={'center'} backdrop={'blur'} isOpen={isOpen} onClose={onClose}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">!Lo sentimos! Aún no está disponible</ModalHeader>
+              <ModalBody>
+                <p> 
+                  Esta función aún se encuentra en desarrollo, proximamente estará a tu alcance.
+                </p>
+              </ModalBody>
+              <ModalFooter>
+                {/* <Button color="danger" variant="light" onPress={onClose}>
+                  
+                </Button> */}
+                <Button color="primary" onPress={onClose}>
+                  Cerrar
+                </Button>
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+      </>
     );
 };
 

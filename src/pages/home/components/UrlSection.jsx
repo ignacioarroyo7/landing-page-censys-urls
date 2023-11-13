@@ -7,7 +7,7 @@ const UrlSection = () => {
   const listTiposBancos = [
     {
       id: 1,
-      nombre: "BancaIndividuo",
+      nombre: "Banca Individuo",
     },
     {
       id: 2,
@@ -23,29 +23,30 @@ const UrlSection = () => {
     },
   ];
   return (
-
-    <div className="flex w-full flex-col items-center">
-              <Tabs aria-label="Dynamic tabs" fullWidth={true} className="justify-center mt-2">
+<>
+<div id="seccion-servicios" className="flex items-center justify-center py-10">
+        <h1 className="text-4xl font-bold">Accesos WEB</h1>
+     </div>
+    <div id="seccion-accesos" className="flex flex-col items-center max-w-screen-lg mx-auto px-20">
+              <Tabs aria-label="Options" fullWidth={true} className="justify-center mt-2">
                 {listTiposBancos.map(({ id, nombre }) => (
                   <Tab key={id} title={nombre}>
                     <Card fullWidth={true}>
-                      <CardHeader>
+                      <CardBody>
                         <div className="flex flex-row justify-between w-full">
-                          <div className="flex-1 justify-center p-4 bg-blue-300">
+                          <div className="flex-1 justify-center p-4">
                               <p className="text-center">Desarrollo </p>
                           </div>
-                          <div className=" flex-1 justify-center p-4 bg-blue-300">
+                          <div className=" flex-1 justify-center p-4 ">
                               <p className="text-center">Testing</p>
                           </div>
                         </div>
-                      </CardHeader>
                       <hr/>
-                      <CardBody>
                       <div className="flex flex-row justify-between w-full">
-                          <div className="flex-1 justify-center p-4 bg-blue-300">
+                          <div className="flex-1 justify-center  ">
                           <Acordeon />
                           </div>
-                          <div className=" flex-1 justify-center p-4 bg-blue-300">
+                          <div className=" flex-1 justify-center">
                           <Acordeon />
                           </div>
                         </div>
@@ -55,6 +56,7 @@ const UrlSection = () => {
                 ))}
               </Tabs>
     </div>
+</>
   );
 };
 

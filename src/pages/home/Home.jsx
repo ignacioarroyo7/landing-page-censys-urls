@@ -7,15 +7,11 @@ const Home = () => {
  
   return (
     <>
-      <div>
         <BannerSection/>
-      </div>
-      <UrlSection/>
-      {/* <div>
       <ServicesSection/>
-    </div>
-  <div>
-    <UserSection/>
+      <UrlSection/>
+      <UserSection/>
+  {/* <div>
   </div> */}
     </>
   );

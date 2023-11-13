@@ -12,34 +12,19 @@ const NavbarHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <Navbar  onMenuOpenChange={setIsMenuOpen} className='mb-20'>
-        <NavbarContent>
-        {isMobile?
-         <NavbarMenuToggle
-         aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-         className="sm:hidden"
-         /> 
-          :
-        <></>
-        }
+      <Navbar className="fixed top-0" onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
         <NavbarBrand>
-            <CensysLogo/>
-            <p className="font-bold text-inherit">Censys S.A.</p>
+        <CensysLogo/>
+      <p className="font-bold text-inherit">Censys S.A.</p>
         </NavbarBrand>
-        </NavbarContent >
-        {
-          isMobile ? 
-              <NavbarMenu className="sm:flex gap-4" justify="center">
-              {dataHeader.map(({id,name,idLink})=>(
-              <NavbarMenuItem key={`${id}-${name}`}>
-                <Link className="w-full" underline="hover" key={id} color="foreground" href={idLink}>
-                  {name}
-                </Link>
-              </NavbarMenuItem >
-              ))}
-              </NavbarMenu>
-          : 
-          <NavbarContent className="sm:flex gap-4" justify="center">
+      </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
               {dataHeader.map(({id,name,idLink})=>(
               <NavbarItem key={`${id}-${name}`} className="px-4">
                 <Link underline="hover" key={id} color="foreground" href={idLink}>
@@ -47,11 +32,17 @@ const NavbarHeader = () => {
                 </Link>
               </NavbarItem>
               ))}
-            </NavbarContent>
-        }
-        
-        
-      </Navbar>
+      </NavbarContent>
+      <NavbarMenu>
+      {dataHeader.map(({id,name,idLink})=>(
+              <NavbarMenuItem key={`${id}-${name}`} className="px-4">
+                <Link underline="hover" key={id} color="foreground" href={idLink}>
+                  {name}
+                </Link>
+              </NavbarMenuItem>
+              ))}
+      </NavbarMenu>
+    </Navbar>
     );
 };
 

@@ -5,7 +5,7 @@ export const dataBanks = [
     },
     {
         id:2,
-        image:"logo-mbf.png"
+        image:"banco2.png"
     },
     {
         id:3,
