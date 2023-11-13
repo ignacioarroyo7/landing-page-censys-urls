@@ -1,29 +1,19 @@
-import { useRef } from 'react';
+import { useRef, useEffect,useState } from 'react';
 import {Accordion, AccordionItem, Avatar,Link,Snippet} from "@nextui-org/react";
 import { UrlsBanks } from './UrlBanks';
 
-const Acordeon = () => {
+const Acordeon = ({UrlsBankss}) => {
+  // useEffect(() => {
+  // console.log('UrlsBankss props',UrlsBankss);
+  // setListUrl(UrlsBankss)
+  // },[])
+  // const [ListUrl, setListUrl] = useState([])
+  
     const linkRef = useRef(null);
     // const listBank = urls
-
-    const copyToClipboard = (url) => {
-        // Obtén el contenido del enlace
-        const textToCopy = `https://${url}/#/auth/login`
-        // Crea un elemento temporal para copiar el texto
-        const tempInput = document.createElement("input");
-        tempInput.value = textToCopy;
-        document.body.appendChild(tempInput);
-    
-        // Selecciona y copia el texto al portapapeles
-        tempInput.select();
-        document.execCommand('copy');
-    
-        // Elimina el elemento temporal
-        document.body.removeChild(tempInput);
-      };
     return (
         <Accordion isCompact selectionMode="multiple">
-{UrlsBanks.map(({id,nombre,url,image,entorno})=>(
+{UrlsBankss.map(({id,nombre,url,image,entorno})=>(
       <AccordionItem
         key={id}
         aria-label={nombre}
@@ -47,22 +37,10 @@ const Acordeon = () => {
           {`${entorno} ${nombre}`}
         </Link>
         </Snippet>
-        
-        {/* <Tooltip
-          key={'top-end'}
-          placement={'top-end'}
-          content={'Copiar enlace'}
-          color="primary"
-        >
-        <Button onClick={()=>{copyToClipboard(url)}} className='ms-2' size='sm' isIconOnly color="primary" aria-label="Like">
-        <FontAwesomeIcon icon={faCopy} />
-      </Button>
-        </Tooltip> */}
         </div>
       </AccordionItem>
 ))}
     </Accordion>
     );
 };
-
 export default Acordeon;

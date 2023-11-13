@@ -20,7 +20,7 @@ const BannerSection = () => {
       {/* Texto superpuesto */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
       <h3 className="text-white/60 text-4xl font-bold my-5">Investigación y Desarrollo</h3>
-        <h4 className="text-white/60 font-medium text-large">Accesos WEB, Servicios, Pruebas, Helpers, Usuarios</h4>
+        <h4 className="text-white font-bold text-large">Accesos WEB, Servicios, Pruebas, Helpers, Usuarios</h4>
         <div className='mt-10'>
         <Button  
             size="lg"

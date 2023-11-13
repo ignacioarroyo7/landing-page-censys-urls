@@ -1,34 +1,22 @@
-import { Card, CardBody, Tabs, Tab, CardHeader } from "@nextui-org/react";
-import { UrlsBanks } from "./UrlBanks";
+import {
+  Card,
+  CardBody,
+  Tabs,
+  Tab,
+} from "@nextui-org/react";
 import Acordeon from "./Acordeon";
 import { useState } from "react";
+import { listTiposBancos } from "../../../components/utilities";
+
+
 const UrlSection = () => {
   // const listDesa = UrlsBanks.filter((banco) => banco.entorno === "desarrollo")
 
   const [selected, setSelected] = useState("bi");
-  const listTiposBancos = [
-    {
-      key: "bi",
-      nombre: "Banca Individuo",
-    },
-    {
-      key: "be",
-      nombre: "Banca Empresa",
-    },
-    {
-      key: "bogc",
-      nombre: "Gestión Comercial",
-    },
-    {
-      key: "boma",
-      nombre: "Mesa de Ayuda",
-    },
-  ];
+
   return (
     <>
-      <div
-        className="flex items-center justify-center py-10"
-      >
+      <div className="flex items-center justify-center py-10">
         <h1 className="text-4xl font-bold">Accesos WEB</h1>
       </div>
       <div
@@ -42,8 +30,8 @@ const UrlSection = () => {
           fullWidth={true}
           className="justify-center mt-2"
         >
-          {listTiposBancos.map(({ key, nombre }) => (
-            <Tab key={key} title={nombre}>
+          {listTiposBancos.map(({ key, nombre,listaDesa,listaTest }) => (
+            <Tab key={key} title={nombre} listaDesa={listaDesa} listaTest={listaTest}>
               <Card fullWidth={true}>
                 <CardBody>
                   <div className="flex flex-row justify-between w-full">
@@ -57,10 +45,10 @@ const UrlSection = () => {
                   <hr />
                   <div className="flex flex-row justify-between w-full">
                     <div className="flex-1 justify-center  ">
-                      <Acordeon/>
+                        <Acordeon UrlsBankss={listaDesa} />
                     </div>
-                    <div className=" flex-1 justify-center">
-                      <Acordeon />
+                    <div className="flex-1 justify-center">
+                        <Acordeon UrlsBankss={listaTest} />
                     </div>
                   </div>
                 </CardBody>

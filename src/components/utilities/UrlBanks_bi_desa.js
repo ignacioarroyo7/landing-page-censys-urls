@@ -4,7 +4,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Sucredito',
-        url:'censys-sa.com.ar/testing/bi/sucredito',
+        url:'censys-sa.com.ar/sucredito/homebanking',
         image:"logo-sucredito.png"
     },
     {
@@ -12,7 +12,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco Más Ventas',
-        url:'censys-sa.com.ar/testing/bi/bmv',
+        url:'censys-sa.com.ar/bmv/homebanking',
         image:"faviconbmv.png"
     },
     {
@@ -20,7 +20,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco Municipal de Rosario',
-        url:'censys-sa.com.ar/testing/bi/bmr',
+        url:'censys-sa.com.ar/bmros/homebanking',
         image:"minilogo_bmr1.png"
     },
     {
@@ -28,7 +28,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco Santiago del Estero',
-        url:'censys-sa.com.ar/testing/bi/bse',
+        url:'censys-sa.com.ar/bse/homebanking',
         image:"logo-bse.png"
     },
     {
@@ -36,7 +36,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco de Tierra del Fuego',
-        url:'censys-sa.com.ar/testing/bi/btf',
+        url:'censys-sa.com.ar/btf/homebanking',
         image:"logo-btf.png"
     },
     {
@@ -44,7 +44,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco CMF',
-        url:'censys-sa.com.ar/testing/bi/cmf',
+        url:'censys-sa.com.ar/cmf/homebanking',
         image:"logo-cmf.png"
     },
     {
@@ -52,7 +52,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Mercedes Benz',
-        url:'censys-sa.com.ar/testing/bi/mbenz',
+        url:'censys-sa.com.ar/mercedes/homebanking',
         image:"logo-mbz.png"
     },
     {
@@ -60,7 +60,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Moneda Uno',
-        url:'censys-sa.com.ar/testing/bi/monedauno',
+        url:'censys-sa.com.ar/monedauno/homebanking',
         image:"logo-mu.png"
     },
     {
@@ -68,7 +68,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco Piano',
-        url:'censys-sa.com.ar/testing/bi/piano',
+        url:'censys-sa.com.ar/piano/homebanking',
         image:"logo-piano.png"
     },
     {
@@ -76,7 +76,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Tarjeta Origen',
-        url:'censys-sa.com.ar/testing/bi/tarjetaorigen',
+        url:'censys-sa.com.ar/tarjetaorigen/homebanking',
         image:"logo-to.png"
     },
     {
@@ -84,7 +84,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco VOII',
-        url:'censys-sa.com.ar/testing/bi/voii',
+        url:'censys-sa.com.ar/voii/homebanking',
         image:"logo-voii.png"
     },
     {
@@ -92,7 +92,7 @@ export const UrlsBanks_BI_DESA = [
         banco:'bi',
         entorno:'Desarrollo',
         nombre:'Banco Piola',
-        url:'censys-sa.com.ar/testing/bi/piola',
+        url:'censys-sa.com.ar/piola/homebanking',
         image:"logo-piola.png"
     }
     
