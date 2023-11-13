@@ -17,7 +17,7 @@ const ServicesSection = () => {
      </div>
      <div className="flex items-center justify-center">
     <div className="max-w-[900px] gap-2 grid grid-cols-12 grid-rows-2 px-8 pt-10 pb-20">
-    <Card className="col-span-12 sm:col-span-4 h-[200px]">
+    <Card className="col-span-12 sm:col-span-4 h-auto">
       <CardBody>
          <div className=" flex items-center justify-center">
          <div className="flex flex-col max-w-md mx-auto p-4">
@@ -34,7 +34,7 @@ const ServicesSection = () => {
     </div>
       </CardBody>
     </Card>
-    <Card className="col-span-12 sm:col-span-4 h-[200px]">
+    <Card className="col-span-12 sm:col-span-4 h-auto">
     <CardBody>
          <div className=" flex items-center justify-center">
          <div className="flex flex-col max-w-md mx-auto p-4">
@@ -51,7 +51,7 @@ const ServicesSection = () => {
     </div>
       </CardBody>
     </Card>
-    <Card className="col-span-12 sm:col-span-4 h-[200px]">
+    <Card className="col-span-12 sm:col-span-4 h-auto">
     <CardBody>
          <div className=" flex items-center justify-center">
          <div className="flex flex-col max-w-md mx-auto p-4">
@@ -68,7 +68,7 @@ const ServicesSection = () => {
     </div>
       </CardBody>
     </Card>
-    <Card isFooterBlurred className="w-full h-[200px] col-span-12 sm:col-span-5">
+    <Card isFooterBlurred className="w-full h-auto col-span-12 sm:col-span-5">
     <CardBody>
          <div className=" flex items-center justify-center">
          <div className="flex flex-col max-w-md mx-auto p-4">
@@ -85,7 +85,7 @@ const ServicesSection = () => {
     </div>
       </CardBody>
     </Card>
-    <Card isFooterBlurred className="w-full h-[200px] col-span-12 sm:col-span-7">
+    <Card isFooterBlurred className="w-full h-auto col-span-12 sm:col-span-7">
     <CardBody>
          <div className=" flex items-center justify-center">
          <div className="flex flex-col max-w-md mx-auto p-4">
