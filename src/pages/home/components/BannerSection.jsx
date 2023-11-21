@@ -1,5 +1,6 @@
 import { Button,Modal,ModalFooter,ModalContent,ModalHeader,ModalBody,useDisclosure } from '@nextui-org/react';
-
+import IMAGES from '../../../images/Images'
+// import imgBackground from '../../../images/background.jpg'
 
 const BannerSection = () => {
   const {isOpen, onOpen, onClose} = useDisclosure();
@@ -12,7 +13,8 @@ const BannerSection = () => {
            <div className="relative">
       {/* Imagen de fondo */}
       <img
-        src="../../../../public/resources/images/background.jpg"
+        src="/assets/background.jpg"
+        // src={bannerImage}
         alt="Descripción de la imagen"
         className="w-full h-auto"
       />

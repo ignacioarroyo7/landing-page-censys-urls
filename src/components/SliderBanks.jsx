@@ -36,7 +36,7 @@ const SliderBanks = () => {
                   className="flex items-center slider-horizontal"
                 >
                   <Image
-                    src={`../public/resources/images/${image}`}
+                    src={`/assets/${image}`}
                     alt="Banco"
                     width="90"
                     height="70"

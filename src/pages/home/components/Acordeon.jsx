@@ -23,7 +23,7 @@ const Acordeon = ({UrlsBankss}) => {
             isBordered
             color="gray"
             radius="lg"
-            src={`../../public/resources/images/${image}`}
+            src={`/assets/${image}`}
           />
         }
         // subtitle="4 unread messages"

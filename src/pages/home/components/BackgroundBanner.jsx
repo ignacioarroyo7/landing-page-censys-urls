@@ -4,7 +4,7 @@ import React from 'react';
 const BackgroundBanner = () => {
     return (
         <div className='absolute -z-50 top-0'>
-            <Image radius='none' className={'w-full object-cover bg-cover bg-center'} src='../../../public/resources/images/background.jpg'/>
+            <Image radius='none' className={'w-full object-cover bg-cover bg-center'} src='../../../background.jpg'/>
         </div>
     );
 };
